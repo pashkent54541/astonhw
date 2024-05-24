@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class Lecture2 {
+
     public static void main(String[] args) {
         //1
         pintThreeWords();
@@ -29,9 +30,7 @@ public class Lecture2 {
         //13
         fillTwoDimensionalArr();
         //14
-        fillArr2(randomInRange(0,10), randomInRange(0,15));
-
-
+        fillArr2(randomInRange(0, 10), randomInRange(0, 15));
     }
 
     // 1
