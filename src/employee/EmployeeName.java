@@ -1,3 +1,5 @@
+package employee;
+
 import java.util.Objects;
 
 public class EmployeeName {
@@ -41,7 +43,7 @@ public class EmployeeName {
 
     @Override
     public String toString() {
-        return "EmployeeName{" +
+        return "employee.EmployeeName{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", fatherName='" + fatherName + '\'' +
