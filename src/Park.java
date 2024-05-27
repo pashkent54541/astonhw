@@ -24,5 +24,34 @@ public class Park {
         public static Attraction of(String nameOfAttraction, String workingTime, int costOfAttraction) {
             return new Attraction(nameOfAttraction,workingTime,costOfAttraction);
         }
+
+        @Override
+        public String toString() {
+            return "Attraction{" +
+                    "nameOfAttraction='" + nameOfAttraction + '\'' +
+                    ", workingTime='" + workingTime + '\'' +
+                    ", costOfAttraction=" + costOfAttraction +
+                    '}';
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Attraction that = (Attraction) o;
+
+            if (costOfAttraction != that.costOfAttraction) return false;
+            if (!nameOfAttraction.equals(that.nameOfAttraction)) return false;
+            return workingTime.equals(that.workingTime);
+        }
+
+        @Override
+        public int hashCode() {
+            int result = nameOfAttraction.hashCode();
+            result = 31 * result + workingTime.hashCode();
+            result = 31 * result + costOfAttraction;
+            return result;
+        }
     }
 }
