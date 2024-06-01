@@ -35,7 +35,7 @@ public abstract class Animal {
             throw new IllegalArgumentException("Distance can not be negative");
         }
         if (distance > maxSwimDistance) {
-            System.out.println(type + " can not swim more than " + maxRunDistance + " meters");
+            System.out.println(type + " can not swim more than " + maxSwimDistance + " meters");
         } else {
             System.out.println(name + " проплыл " + distance + " м.");
         }
